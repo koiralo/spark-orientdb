@@ -1,8 +1,8 @@
 package org.apache.spark.orientdb.documents
 
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
-class TableNameSuite extends FunSuite {
+class TableNameSuite extends AnyFunSuite {
 
   test("escaped table name") {
     val tableName = new TableName("test_table")

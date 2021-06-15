@@ -4,9 +4,9 @@ import com.orientechnologies.orient.core.metadata.schema.OType
 import com.orientechnologies.orient.core.record.impl.ODocument
 import org.apache.spark.sql.{Row, SparkSession}
 import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType}
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
-class ConversionsSuite extends FunSuite {
+class ConversionsSuite extends AnyFunSuite {
 
   test("Spark datatype to OrientDB datatype test") {
     val orientDBType = Conversions.sparkDTtoOrientDBDT(StringType)

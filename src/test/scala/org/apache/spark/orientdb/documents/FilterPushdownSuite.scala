@@ -2,9 +2,9 @@ package org.apache.spark.orientdb.documents
 
 import org.apache.spark.sql.sources._
 import org.apache.spark.sql.types._
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
-class FilterPushdownSuite extends FunSuite {
+class FilterPushdownSuite extends AnyFunSuite {
 
   test("buildWhereClause with empty list of filters") {
     assert(FilterPushdown.buildWhereClause(StructType(Nil), Seq.empty) === "")

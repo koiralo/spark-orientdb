@@ -1,4 +1,4 @@
-name: Scala CI
+name: CI
 
 on:
   push:
@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -22,9 +21,5 @@ jobs:
         distribution: 'adopt'
     - name: Step - 3 Have github actions build Maven Project
       run: mvn -B package --file pom.xml
-    
-    - name: Step 4 - List Current directory
-      run: |
-        cd target
-        ls -a 
+
     

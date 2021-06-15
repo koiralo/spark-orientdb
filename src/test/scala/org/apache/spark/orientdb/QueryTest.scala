@@ -2,9 +2,9 @@ package org.apache.spark.orientdb
 
 import org.apache.spark.sql.catalyst.plans.logical
 import org.apache.spark.sql.{DataFrame, Row}
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
-trait QueryTest extends FunSuite {
+trait QueryTest extends AnyFunSuite {
 
   def checkAnswer(df: DataFrame, expectedAnswer: Seq[Row]): Unit = {
     val isSorted = df.queryExecution.logical.collect {case s: logical.Sort => s}.nonEmpty

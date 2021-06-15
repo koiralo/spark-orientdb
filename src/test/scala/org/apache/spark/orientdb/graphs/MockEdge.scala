@@ -1,8 +1,8 @@
 package org.apache.spark.orientdb.graphs
 
 import java.util
-
 import com.orientechnologies.orient.core.db.record.OIdentifiable
+import com.orientechnologies.orient.core.record.ORecord
 import com.tinkerpop.blueprints.impls.orient.{OrientBaseGraph, OrientEdge}
 
 class MockEdge(graph: OrientBaseGraph, record: OIdentifiable)

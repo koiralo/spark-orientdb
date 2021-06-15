@@ -17,7 +17,7 @@ import org.apache.spark.orientdb.udts._
 import org.apache.spark.sql.Row
 import org.apache.spark.sql.types._
 
-import scala.collection.JavaConversions._
+import scala.collection.JavaConverters._
 import scala.collection.mutable
 
 private[orientdb] object Conversions {

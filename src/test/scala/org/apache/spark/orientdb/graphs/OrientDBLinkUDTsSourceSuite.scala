@@ -9,7 +9,7 @@ import com.orientechnologies.orient.core.record.ORecord
 import com.orientechnologies.orient.core.record.impl.ODocument
 import com.tinkerpop.blueprints.impls.orient.OrientBaseGraph
 import org.apache.spark.orientdb.udts._
-import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.SparkContext
 import org.apache.spark.orientdb.{QueryTest, TestUtils}
 import org.apache.spark.sql.sources.{EqualTo, Filter, PrunedFilteredScan}
 import org.apache.spark.sql.types.{StructField, StructType}
